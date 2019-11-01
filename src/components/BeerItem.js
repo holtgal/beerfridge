@@ -22,7 +22,7 @@ const BeerImage = styled.img `
     grid-row 1 / -1;
     margin-top: 10px;
     object-fit: cover;
-    width: 100%;
+    width: 50%;
 
 
 `

@@ -64,12 +64,13 @@ class AllBeers extends Component {
         this.setState({ folded })
     }
     handleChange(i, selected, like){
-        const beer = this.props.beer[i]
+        const beer = this.props.beers[i]
         const updatedBeer = {
             ...beer,
             likes: selected.likes += like
         }
-        this.props.updatedLikes(i, updatedBeer)
+        console.log("Beer index", i)
+        this.props.updateLikes(i, updatedBeer)
     }
     render(){
         const {beers, deleteBeer, like, pint, plus, toggle} = this.props

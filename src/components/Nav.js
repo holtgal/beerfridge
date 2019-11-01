@@ -32,14 +32,14 @@ const MainNav = styled.nav`
 const TitleContainer = styled.button`
   align-items: center;
   background: #333; 
-  color: #3ED863 !important;
+  color: ##FF00FF !important;
   display: grid;
   font-weight: 600;
   letter-spacing: 1.5px;
   text-align: center;
   text-transform: uppercase;
   &:hover {
-    background: #39D872;
+    background: ##FF00FF;
     color: #fff !important;      
   }
 `
@@ -51,7 +51,7 @@ const Icon = styled.img`
 const NavItem = styled.button`
   padding-top: 7px;
   &:hover {
-    background: #39D872;
+    background: #ffa500;
     text-shadow: 1px 1px #3b4199;
   }
   &:hover ${Icon} {
