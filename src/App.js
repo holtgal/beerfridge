@@ -69,7 +69,7 @@ class App extends Component {
     this.foldNav = this.foldNav.bind(this)
 
     this.state = {
-      url: "https://beer.fluentcloud.com/v1/beer/",
+      url: "v1/beer/",
       active: 0,
       beers: [],
       backgroundMain: BackgroundMain,
@@ -113,7 +113,12 @@ class App extends Component {
         name: name,
         likes: 1
       }
-      axios.post(this.state.url, newBeer)
+      axios.post(this.state.url, newBeer, {
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        }
+      })
       .then(res => {
         this.loadData()
         alert(`Thanks for adding a beer to the cooler! 😋`)
