@@ -1,12 +1,58 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { createGlobalStyle } from 'styled-components'
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const GlobalStyle = createGlobalStyle`
+ 
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+}
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+body {
+  backface-visibility: hidden;
+  background: #222;
+  color: #fff;
+  font: 18px/1.5 'Elalba';
+  letter-spacing: 3px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+}
+button {
+  color: #fff;
+  background: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+}
+h1 {
+  font-size: 30px;
+}
+button:focus {outline:0;}
+ul {
+  list-style-type: none !important;
+}
+nav {
+  list-style-type: none !important;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  box-shadow: inset 0 0 10px #000;
+}
+`
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App/>, document.getElementById('root'));

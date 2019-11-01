@@ -127,8 +127,7 @@ class App extends Component {
       }).catch((error) => {
         alert("UH OH! Looks like we're having issues with our server please try again later")
         console.log(error)
-        //code that handles error
-        //maybe email myself error report through https://nodemailer.com/about/ or similar 
+   
         }
       )
       form.reset()   
@@ -147,8 +146,7 @@ class App extends Component {
         this.loadData()
       }).catch((error) => {
         console.log(error)
-        //code that handles error
-        //maybe email myself error report through https://nodemailer.com/about/ or similar 
+
         }
       )  
   }
@@ -160,8 +158,7 @@ class App extends Component {
       }).catch((error) => {
         alert("UH OH! Looks like we're having issues with our server please try again later")
         console.log(error)
-        //code that handles error
-        //maybe email myself error report through https://nodemailer.com/about/ or similar 
+
         }
       )  
   }
