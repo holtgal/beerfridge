@@ -5,7 +5,7 @@ import history from '../History'
 import { slideUp } from '../transitions'
 
 import BeerItem from './BeerItem'
-import LightBox from './LightBox'
+import LightBox from './LightBox.js'
 import { logicalExpression } from '@babel/types'
 
 const AllBeersContainer = styled.section `
@@ -98,7 +98,7 @@ class AllBeers extends Component {
 
 }
 
-AllBeers.PropTypes ={
+AllBeers.propTypes ={
     background: PropTypes.string.isRequired,
     beers: PropTypes.any.isRequired,
     deleteBeer: PropTypes.func.isRequired,

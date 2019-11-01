@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const ImgOverlay = styled.div `
     background: #30363352;
-    color: #bcbebd;
+    color: #pink;
     display: grid;
     grid-column 1 / -1;
     grid-row: 1 / -1;
