@@ -59,8 +59,7 @@ class Cooler extends Component {
                   history.push({pathname: '/beers', state: scale})
                 }}>
                     <CoolerImg src={open}/>
-                    <h1>Welcome</h1>
-                    <h2>Click here to enter the cooler</h2>
+                    
                 </CoolerInner>
             </OverlayContainer>
           </CoolerContainer>

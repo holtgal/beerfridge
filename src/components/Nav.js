@@ -73,7 +73,7 @@ class Nav extends Component {
             toggle(0)
             history.push({pathname: '/', state: slide})
           }} role="button">
-        Holt's Beer
+        Holt's Beer Box
         </TitleContainer>
         <MainNav>
           <NavItem 

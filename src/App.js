@@ -28,17 +28,17 @@ import NotFound from './components/NotFound'
 
 const Wrapper = styled.main`
   display: grid;
-  grid-template-columns: 140px auto;
+  grid-template-columns: 10px auto;
   max-height: 100vh;
   overflow: hidden;
-  perspective: 1200px;
+  perspective: 1500px;
   ${media.tablet`grid-template-columns: auto;`}
 `
 
 const Hamburger = styled.div`
   display: none;
   height: 60px;
-  width: 60px;
+  width: 150px;
   position: fixed;
   top: 10px;
   right: 10px;
@@ -121,7 +121,7 @@ class App extends Component {
       })
       .then(res => {
         this.loadData()
-        alert(`Thanks for adding a beer to the cooler! 😋`)
+        alert(`Hey Blazer lets crush a brewski!`)
         this.toggleActiveClass(1)
         history.push({ pathname: '/beers', state: slide })
       }).catch((error) => {
